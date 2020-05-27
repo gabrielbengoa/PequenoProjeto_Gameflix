@@ -4,6 +4,6 @@ Este repositório irá salvar o conteúdo do projeto em dupla (formado por mim, 
 
 ## Linguagens utilizadas no projeto
 
-![Logos do HTML, CSS e JavaScript](telas\tela1.jpg)
+![Logos do HTML, CSS e JavaScript](\telas\tela1.jpg)
 
 > Foi utilizado o framework Front-End Materialize.
