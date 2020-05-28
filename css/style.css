@@ -56,3 +56,14 @@ nav div {
 #p1 {
   margin-left: 20px;
 }
+#main1 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 50pt;
+  background-color: #b2dfdb;
+}
+#main2 {
+  font-family: "Slabo 27px", serif;
+  text-align: center;
+  font-size: 27px;
+}
