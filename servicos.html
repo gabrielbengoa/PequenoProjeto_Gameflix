@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
       rel="stylesheet"
     />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
     <link
@@ -27,6 +32,9 @@
       <nav>
         <div class="nav-wrapper blue-grey darken-3" style="text-align: left;">
           <a href="index.html" class="brand-logo">Gameflix</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="servicos.html">Nossos Serviços</a></li>
@@ -35,19 +43,130 @@
           </ul>
         </div>
       </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="servicos.html">Nossos Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
       <!--fim da barra de navegação-->
 
       <!--inicio do painel-->
     </header>
 
-    <main></main>
+    <main>
+      <div id="aboutTitle" class="card-panel">
+        <span class="green-text text-darken-2"
+          >QUAIS SÃO AS LICENÇAS QUE TRABALHAMOS NA GAMEFLIX?</span
+        >
+      </div>
+      <p id="aboutParagraph">
+        As empresas como a Sony, Microsoft e Valve Corporation vendem seus jogos
+        digitais com <br />
+        duas licenças embutidas nele. Basicamente, você pode usar esses jogos em
+        dois consoles <br />
+        simultaneamente, ou até mesmo em PCs, com processos de instalações
+        diferentes.
+      </p>
+      <p id="aboutParagraph">
+        Existem dois tipos de licenças para jogos de PS4 e Xbox One. que
+        chamamos de <br />
+        Econômica e PLUS+. O mesmo vale para jogos de PC, que usam essas duas
+        licenças.
+      </p>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div id="aboutTitle" class="card-panel">
+        <span class="green-text text-darken-2"
+          >MAS QUAIS SÃO AS CARACTERÍSTICAS DE CADA UMA?</span
+        >
+      </div>
+      <p id="aboutParagraph">
+        Primeiro ponto comum e importante, as duas licenças permitem que você
+        jogue qualquer <br />
+        jogo <bold>COMPLETO</bold> e totalmente <bold>ORIGINAL</bold>, sem
+        limites para consoles e PC. E lógico que <br />
+        esses jogos serão atualizados com novidades que suas desenvolvedoras
+        trazem.
+      </p>
+      <p id="aboutParagraph">
+        A única diferença é que elas têm algumas características e benefícios
+        próprios, que vamos <br />
+        explicar na tabela abaixo:
+      </p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <ul id="collection" class="collection with-header">
+        <li class="collection-header"><h4>LICENÇA ECONÔMICA (R$16,99)</h4></li>
+        <li class="collection-item">
+          ● 4 pessoas podem usar a mesma conta cadastrada.
+        </li>
+        <li class="collection-item">
+          ● Os jogos em questão rodarão a 1080p/60fps.
+        </li>
+        <li class="collection-item">
+          ● DLCs de seus respectivos jogos terão que ser comprados separadamente
+          da licença.
+        </li>
+        <li class="collection-item">
+          ● Apenas haverá a opção de fazer download do jogo.
+        </li>
+        <li class="collection-item">● Não terão acesso a jogos retro.</li>
+      </ul> 
+        
+            <ul id="collection2" class="collection with-header">
+              <li class="collection-header">
+                <h4>LICENÇA PLUS+ (R$34,99)</h4>
+              </li>
+              <li class="collection-item">
+                ● 8 pessoas podem usar a mesma conta cadastrada.
+              </li>
+              <li class="collection-item">
+                ● Os jogos em questão rodarão a 1440p/60 (ou até 144) fps.
+              </li>
+              <li class="collection-item">
+                ● DLCs de seus respectivos jogos serão gratuitos com essa
+                licença.
+              </li>
+              <li class="collection-item">
+                ● Além da opção de download, o usuário poderá jogar seu jogo na
+                nuvem.
+              </li>
+              <li class="collection-item">● Terão acesso a jogos retro.</li>
+            </ul>
+          </h4>
+        </li>
+    
+      </ul>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p id="aboutParagraph">
+        Nossos serviços possuem 100% de garantia, com uma infraestrutura muito <br />
+        avançada para Cloud Gaming, e sempre trazemos novidades na nossa extensa <br />
+        biblioteca de games.
+      </p>
+      <p id="aboutParagraph">
+        Futuramente, queremos também trazer jogos de Nintendo na nossa lista, a medida <br />
+        que crescemos e expandimos nossa empresa ao alcance de pessoas que querem <br />
+        trabalhar nessa área, e aos nossos clientes para eles terem diversão a toda hora!
+      </p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h5 id="taste">Eis aqui um gostinho da nossa seção de jogos retro:</h5>
+      <iframe width="100%" height="615" src="https://www.youtube.com/embed/1_tmOY0VrOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </main>
 
     <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Página da Web responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- JQuery -->
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </body>
 </html>

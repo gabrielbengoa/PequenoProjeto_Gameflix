@@ -35,6 +35,9 @@
       <nav>
         <div class="nav-wrapper blue-grey darken-3" style="text-align: left;">
           <a href="index.html" class="brand-logo">Gameflix</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="servicos.html">Nossos Serviços</a></li>
@@ -43,6 +46,12 @@
           </ul>
         </div>
       </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="servicos.html">Nossos Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
       <!--fim da barra de navegação-->
 
       <!--inicio do painel-->
@@ -115,11 +124,19 @@
     </main>
 
     <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Página da Web responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- JQuery -->
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </body>
 </html>
